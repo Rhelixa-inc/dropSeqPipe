@@ -77,8 +77,8 @@ properties:
             required:
               - build
               - release
-          required:
-            - first_species          
+        required:
+          - first_species          
       ratio:
         type: number
         description: Minimum percentage of total transcripts in one cell to validate a species
