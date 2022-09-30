@@ -39,7 +39,7 @@ rule multiqc_fastqc_barcodes:
         html='{results_dir}/reports/fastqc_barcodes.html'
     params: '-m fastqc --ignore *_R2*'
     wrapper:
-        '0.36.0/bio/multiqc'
+        'v1.14.1/bio/multiqc'
 
 rule multiqc_fastqc_reads:
     input: 
@@ -48,7 +48,7 @@ rule multiqc_fastqc_reads:
         html='{results_dir}/reports/fastqc_reads.html'
     params: '-m fastqc --ignore *_R1*'
     wrapper:
-        '0.36.0/bio/multiqc'
+        'v1.14.1/bio/multiqc'
 
 rule fasta_fastq_adapter:
     input:

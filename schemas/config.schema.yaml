@@ -77,8 +77,8 @@ properties:
             required:
               - build
               - release
-          required:
-            - first_species          
+        required:
+          - first_species          
       ratio:
         type: number
         description: Minimum percentage of total transcripts in one cell to validate a species
@@ -199,31 +199,31 @@ properties:
         properties:
           outFilterMismatchNmax:
             type: number
-            description:
+            description: Description
             default: 10
           outFilterMismatchNoverLmax: 
             type: number
-            description:
+            description: Description
             default: 0.3
           outFilterMismatchNoverReadLmax:
             type: number
-            description: 
+            description: Description
             default: 1
           outFilterMatchNmin:
             type: number
-            description:
+            description: Description
             default: 0
           outFilterMatchNminOverLread:
             type: number
-            description:
+            description: Description
             default: 0
           outFilterScoreMinOverLread:
             type: number
-            description:
+            description: Description
             default: 0
           genomeChrBinNbits:
             type: number
-            description:
+            description: Description
             default: 18
         required:
           - outFilterMismatchNmax
