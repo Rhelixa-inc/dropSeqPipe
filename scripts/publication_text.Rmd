@@ -11,7 +11,7 @@ library(yaml)
 ```{r load_yaml, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
 versions = list()
 for (yaml_file in snakemake@input$yaml_files){
-  current_env = yaml.load_file(yaml_file)
+  current_env = yaml.load_file(yaml_file, Loader=yaml.Loader)
   for (package in current_env$dependencies){
     if(grepl(pattern = 'cutadapt', package)){
       versions[['cutadapt']] = strsplit(package,'=|==| ==| == ')[[1]][2]

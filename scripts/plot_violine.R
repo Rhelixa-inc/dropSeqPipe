@@ -137,7 +137,7 @@ gg <- ggplot(meta.data, aes(x = nUMI, y = nCounts, color = orig.ident)) +
 
 # dev.new()
 # htmlwidgets::saveWidget(ggplotly(gg), file.path(getwd(),snakemake@output$html_umivscounts))
-ggsave(gg, file = file.path(getwd(), snakemake@output$pdf_umivscounts), width = 12, height = 7)
+ggsave(gg, file = snakemake@output$pdf_umivscounts, width = 12, height = 7)
 
 # how about unaligned reads/UMI?
 # Note(Seb): raw.data is actually filtered data i.e. nr of genes likely to be smaller than input data!
